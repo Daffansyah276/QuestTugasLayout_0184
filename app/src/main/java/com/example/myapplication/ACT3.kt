@@ -102,4 +102,15 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
         }
     }
 }
+@Composable
+fun ItemCard(
+    cardColor: Color,
+    nama: Int,
+    noHp: Int?,
+    alamat : Int,
+    fontNama: FontFamily,
+    warnaNama: Color,
+    warnaNoHp: Color? = null,
+    warnaAlamat: Color
+)
 
