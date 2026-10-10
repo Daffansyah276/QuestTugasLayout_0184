@@ -90,6 +90,16 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             warnaNoHp = colorResource(R.color.text_cyan),
             warnaAlamat = colorResource(R.color.text_yellow)
         )
-       
+        Box(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Text(
+                stringResource(R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 30.dp)
+            )
+        }
     }
 }
+
