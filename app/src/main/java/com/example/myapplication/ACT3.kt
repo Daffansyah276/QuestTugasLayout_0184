@@ -33,5 +33,12 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             .padding(top = 40.dp, start = 12.dp, end = 12.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
-    )
+    ) {
+        Text(
+            stringResource(R.string.prodi),
+            fontSize = 28.sp,
+            fontWeight = FontWeight.Bold
+        )
+
+    }
 }
