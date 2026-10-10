@@ -68,7 +68,18 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             warnaAlamat = colorResource(R.color.text_yellow)
         )
 
-   
+        Spacer(modifier = Modifier.height(8.dp))
+        ItemCard(
+            cardColor = colorResource(R.color.card_2_bg),
+            nama = R.string.nama_3,
+            noHp = R.string.nohp_3,
+            alamat = R.string.alamat_3,
+            fontNama = FontFamily.Default,
+            warnaNama = Color.White,
+            warnaNoHp = colorResource(R.color.text_cyan),
+            warnaAlamat = colorResource(R.color.text_yellow)
+        )
 
+        
     }
 }
