@@ -133,5 +133,34 @@ fun ItemCard(
                     .size(65.dp)
                     .padding(4.dp)
             )
+            Spacer(modifier = Modifier.width(12.dp))
+            Column(
+                modifier = Modifier.weight(1f)
+            ) {
+                Text(
+                    stringResource(nama),
+                    fontSize = 20.sp,
+                    fontFamily = fontNama,
+                    fontWeight = if (fontNama == FontFamily.Default) FontWeight.Bold else FontWeight.Normal,
+                    color = warnaNama
+                )
+
+                if (noHp != null && warnaNoHp != null) {
+                    Text(
+                        stringResource(noHp),
+                        fontSize = 14.sp,
+                        color = warnaNoHp,
+                        modifier = Modifier.padding(top = 2.dp)
+                    )
+                }
+
+                Text(
+                    stringResource(alamat),
+                    fontSize = 14.sp,
+                    color = warnaAlamat,
+                    modifier = Modifier.padding(top = 2.dp)
+                )
+            }
+        }
     }
 }
