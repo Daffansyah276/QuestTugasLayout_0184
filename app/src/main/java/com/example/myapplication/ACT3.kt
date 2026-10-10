@@ -112,5 +112,26 @@ fun ItemCard(
     warnaNama: Color,
     warnaNoHp: Color? = null,
     warnaAlamat: Color
-)
-
+) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(
+            containerColor = cardColor
+        )
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(8.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            val gambar = painterResource(R.drawable.logo_umy)
+            Image(
+                painter = gambar,
+                contentDescription = null,
+                modifier = Modifier
+                    .size(65.dp)
+                    .padding(4.dp)
+            )
+    }
+}
