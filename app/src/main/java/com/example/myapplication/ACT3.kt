@@ -44,6 +44,17 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
             fontSize = 16.sp,
             fontWeight = FontWeight.Bold
         )
+        Spacer(modifier = Modifier.height(16.dp))
+        ItemCard(
+            cardColor = colorResource(R.color.card_0_bg),
+            nama = R.string.nama_1,
+            noHp = R.string.nohp_1,
+            alamat = R.string.alamat_1,
+            fontNama = FontFamily.Cursive,
+            warnaNama = Color.White,
+            warnaNoHp = colorResource(R.color.text_cyan),
+            warnaAlamat = colorResource(R.color.text_yellow)
+        )
 
     }
 }
